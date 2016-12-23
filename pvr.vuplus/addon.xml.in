@@ -6,10 +6,10 @@
   provider-name="Joerg Dembski">
   <requires>
     <c-pluff version="0.1"/>
-    <import addon="xbmc.pvr" version="5.2.3"/>
+    <import addon="kodi.pvr" version="5.2.3"/>
   </requires>
   <extension
-    point="xbmc.pvrclient"
+    point="kodi.pvrclient"
     library_@PLATFORM@="@LIBRARY_FILENAME@"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi se voorprogram vir VU+ / Enigma2 gebasseerde 'set-top' bokse</summary>

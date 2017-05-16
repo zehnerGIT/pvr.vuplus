@@ -225,16 +225,6 @@ void ADDON_Destroy()
   m_CurStatus = ADDON_STATUS_UNKNOWN;
 }
 
-bool ADDON_HasSettings()
-{
-  return true;
-}
-
-unsigned int ADDON_GetSettings(ADDON_StructSetting ***sSet)
-{
-  return 0;
-}
-
 ADDON_STATUS ADDON_SetSetting(const char *settingName, const void *settingValue)
 {
   string str = settingName;
@@ -288,10 +278,6 @@ ADDON_STATUS ADDON_SetSetting(const char *settingName, const void *settingValue)
     }
   }
   return ADDON_STATUS_OK;
-}
-
-void ADDON_FreeSettings()
-{
 }
 
 ADDON_STATUS ADDON_CreateInstance(int instanceType, const char* instanceID, KODI_HANDLE instance, KODI_HANDLE* addonInstance)
